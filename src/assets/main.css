@@ -4,12 +4,13 @@
   --color-text: #2c3e50;
 }
 /* home page */
-.hero{
-  position: relative;
 
+.home{
+  position: relative;
 }
+
 header {
-  position: absolute;
+  position: absolute ;
   top: 0;
   width: 100%;
   display: flex;
@@ -37,12 +38,13 @@ ul {
   padding: 0;
   gap: 5rem;
   transition: all 0.3s ease-in-out;
+  color: #ffffff;
 }
 
 
 li a {
   text-decoration: none;
-  color:#fff;
+  color:inherit;
   font-size: 1.5rem;
   padding: 5px 10px;
 }
@@ -56,6 +58,8 @@ li a:hover {
   border: none;
   cursor: pointer;
   display: none;
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 /*___ hero section */
@@ -65,7 +69,6 @@ li a:hover {
   left: 0;
   width: 100%;
   overflow: hidden;
-  z-index: -1;
 
 }
 
@@ -73,12 +76,10 @@ li a:hover {
  height: 100%;
  display: flex;
  transition: transform 500ms ease-in-out;
- z-index: -1;
 }
 .slide{
   min-width: 100%;
  flex: 0 0 100%;
- z-index: -1;
 }
 
 .hero .hero-img {
@@ -86,7 +87,6 @@ li a:hover {
   height: 100vh;
   display: block;
   object-fit: cover;
-  z-index: -1;
 }
 
 

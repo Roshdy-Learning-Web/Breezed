@@ -58,7 +58,7 @@ onBeforeUnmount(() => {
     .menu {
         position: absolute;
         top: 100%;
-        width: 90%;
+        width: 70%;
         align-items: center;
 
     }
@@ -78,6 +78,7 @@ onBeforeUnmount(() => {
     li {
         width: 70%;
         text-align: center;
+        color: #000000;
         border-bottom: 1px solid #c2c2c296;
         padding-bottom: 1rem;
     }
