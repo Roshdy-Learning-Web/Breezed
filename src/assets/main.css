@@ -80,11 +80,11 @@ li a:hover {
 
 .hero .hero-images {
  display: flex;
- transition: all 1500ms linear;
+ transition: all 1000ms linear;
 }
 .slide{
+  position: relative;
   min-width: 100%;
-  height: 50%;
 }
 
 .hero .hero-img {
@@ -95,8 +95,69 @@ li a:hover {
   object-fit: cover;
 }
 
+.hero-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-text-light);
+  font-size: 1rem;
+}
+.hero-content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
+.hero-title{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 100;
+  color: var(--color-text-light);
+}
 
+.hero-subtitle{
+  font-size: 2rem;
+  font-weight: 100;
+  color: var(--color-text-light);
+  text-transform: capitalize;
+}
+.hero-button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: transparent;
+  color: var(--color-text-light);
+  border: 2px solid var(--color-text-light);
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  width: 15rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn1:hover{
+  background: var(--color-text-light);
+  color: var(--color-primary);
+}
+
+.btn-2{
+  background: var(--color-text-light);
+  color: var(--color-primary);
+}
+.btn-2:hover{
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  border :2px solid #0000;
+}
 
 
 /* end home page */
