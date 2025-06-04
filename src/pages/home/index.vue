@@ -6,10 +6,10 @@ import SliderHero from './partials/slider.vue';
 </script>
 
 <template>
-    <div class="hero">
+    <div class="home">
+        <slider-hero />
         <!-- I positioned the header here to be above the images without using z-index -->
         <home-header />
-        <slider-hero />
 
     </div>
 </template>
