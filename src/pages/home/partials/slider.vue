@@ -88,8 +88,8 @@ onUnmounted(() => {
             </div>
         </div>
         <div class="arrows">
-            <img src="/public/images/next.png" alt="next icon " class="next icon" @click="moveSliderRight" />
-            <img src="/public/images/prev.png" alt="previous icon" class="icon prev" @click="moveSliderLeft" />
+            <img src="/images/next.png" alt="next icon " class="next icon" @click="moveSliderRight" />
+            <img src="/images/prev.png" alt="previous icon" class="icon prev" @click="moveSliderLeft" />
         </div>
     </div>
 </template>
