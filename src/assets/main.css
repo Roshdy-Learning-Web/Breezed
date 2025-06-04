@@ -1,11 +1,13 @@
 @import './base.css';
+
 :root {
   --color-background: #fafafa;
   --color-text: #2c3e50;
 }
+
 /* home page */
 
-.home{
+.home {
   width: 100%;
   position: relative;
   padding: 1rem 1rem 0rem 1rem;
@@ -15,7 +17,7 @@
 }
 
 header {
-  position: absolute ;
+  position: absolute;
   top: 0;
   width: 100%;
   display: flex;
@@ -32,7 +34,7 @@ header {
 }
 
 nav {
- transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 ul {
@@ -49,7 +51,7 @@ ul {
 
 li a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   font-size: 1.5rem;
   padding: 5px 10px;
 }
@@ -72,6 +74,8 @@ li a:hover {
   position: relative;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   width: 100%;
   height: 100vh;
@@ -79,10 +83,11 @@ li a:hover {
 }
 
 .hero .hero-images {
- display: flex;
- transition: all 1000ms linear;
+  display: flex;
+  transition: all 1000ms linear;
 }
-.slide{
+
+.slide {
   position: relative;
   min-width: 100%;
 }
@@ -95,7 +100,7 @@ li a:hover {
   object-fit: cover;
 }
 
-.hero-overlay{
+.hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -110,27 +115,31 @@ li a:hover {
   color: var(--color-text-light);
   font-size: 1rem;
 }
-.hero-content{
+
+.hero-content {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.hero-title{
+.hero-title {
   font-size: 2.5rem;
   text-transform: capitalize;
   font-weight: 100;
   color: var(--color-text-light);
+  padding: 0 2rem;
 }
 
-.hero-subtitle{
+.hero-subtitle {
   font-size: 2rem;
   font-weight: 100;
   color: var(--color-text-light);
   text-transform: capitalize;
+  padding: 0 2rem;
 }
-.hero-button{
+
+.hero-button {
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
@@ -144,19 +153,66 @@ li a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.btn1:hover{
+.btn1:hover {
   background: var(--color-text-light);
   color: var(--color-primary);
 }
 
-.btn-2{
+.btn-2 {
   background: var(--color-text-light);
   color: var(--color-primary);
 }
-.btn-2:hover{
+
+.btn-2:hover {
   background: var(--color-primary);
   color: var(--color-text-light);
-  border :2px solid #0000;
+  border: 2px solid #0000;
+}
+
+.hero .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  z-index: 100;
+
+}
+
+.hero .prev {
+  left: 2rem;
+}
+
+.hero .next {
+  right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-button {
+    width: 15rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .hero-button {
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
 }
 
 
