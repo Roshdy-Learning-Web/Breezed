@@ -28,8 +28,8 @@ onBeforeUnmount(() => {
         <!-- Navigation -->
         <nav class="menu" :style="{ display: isOpen || isWideScreen ? 'block' : 'none' }">
             <ul class="menu-list">
-                <li @click="isOpen = false"><a href="#">Home</a></li>
-                <li @click="isOpen = false"><a href="#">About</a></li>
+                <li @click="isOpen = false"><a href="#home">Home</a></li>
+                <li @click="isOpen = false"><a href="#about-us">About Us</a></li>
                 <li @click="isOpen = false"><a href="#">Services</a></li>
                 <li @click="isOpen = false"><a href="#">Contact</a></li>
             </ul>

@@ -1,0 +1,80 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    color: var(--color-text);
+}
+
+.title {
+    width: 100%;
+    margin-top: 15rem;
+}
+
+.about-us h1 {
+    font-size: 15em;
+    color: var(--color-primary);
+    text-align: flex-start;
+}
+
+.about-us h2 {
+    font-size: 25em;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.left-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.left-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 25em;
+}
+
+.row {
+    display: flex;
+    gap: 15rem;
+}
+
+.row p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.row img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.left button{
+    width: 20rem;
+    height: 5rem;
+    font-size: 2em;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 25px;
+    font-size: 20em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.left button:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
