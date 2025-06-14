@@ -3,11 +3,11 @@
 :root {
   --color-background: #fafafa;
   --color-text: #2c3e50;
+  --color-text-gray: #777;
   --color-text-light: #ebebeb;
   --color-primary: #42b883;
   --color-secondary: #35495e;
   --color-accent: #41b883;
-
 }
 
 *,
@@ -17,6 +17,9 @@
   margin: 0;
   font-weight: normal;
   font-size: 62.5%;
+}
+html{
+  scroll-behavior: smooth;
 }
 
 body {
