@@ -112,11 +112,12 @@ main{
 .cards-section {
     width: 80%;
     display: flex;
+    justify-content: space-around;
     gap: 5rem;
 }
 
 .card{
-    width: 30rem;
+    min-width: 30rem;
     border-radius: 5px;
     padding: 2rem 1rem;
     display: flex;
@@ -135,15 +136,18 @@ main{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    justify-content: space-between;
+    height: 100%;
 }
-.card .card-body h3{
-    font-size: 30em;
+.card .card-body  h3{
+    margin-bottom: 2rem;
+    font-size: 2rem;
     font-weight: 600;
     color: var(--color-primary);
 }
 .card .card-body p{
     color: var(--color-text-gray);
-    font-size: 20em;
+    font-size: 1.4rem;
 }
 
 .card img{
