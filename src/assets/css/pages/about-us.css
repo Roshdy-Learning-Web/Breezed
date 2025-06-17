@@ -3,15 +3,16 @@
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    height: 100vh;
+    min-height: 100vh;
     width: 90%;
     margin: 0 auto;
     color: var(--color-text);
+    padding: 5rem 0;
 }
 
 .title {
     width: 85%;
-    margin-top: 15rem;
+    margin-top: 5rem;
     text-align: start;
 }
 
@@ -170,17 +171,30 @@ main{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .left{
+        width: 80%;
+    }
+    .right{
+        width: 80%;
+    }
     .card{
         border: 2px solid var(--color-primary);
     }
+    .row{
+        gap: 4rem;
+    }
+
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     .row{
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 2rem;
     }
     .right{
         display: none;
+    }
+    .left-icon-item{
+        font-size: 20em;
     }
 }

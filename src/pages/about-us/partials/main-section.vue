@@ -29,7 +29,7 @@
         <div class="right">
             <div>
                 <p>
-                    <a href="#">Breazed with Vue</a>
+                    <a href="#">Breezed with Vue</a>
                     Today’s web is highly interactive, dynamic, and personalized. Modern websites are often powered
                     by frameworks and libraries such as React, Vue.js, or Angular, and many are backed by databases
                     and APIs.
