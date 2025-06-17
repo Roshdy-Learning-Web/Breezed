@@ -1,0 +1,204 @@
+.about-us {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    color: var(--color-text);
+    padding: 5rem 0;
+}
+
+.title {
+    width: 85%;
+    margin-top: 5rem;
+    text-align: start;
+}
+
+
+main{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-us h1 {
+    font-size: 15em;
+    color: var(--color-primary);
+    text-align: flex-start;
+}
+
+.about-us h2 {
+    font-size: 25em;
+}
+
+.left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.left-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.left-icon-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 25em;
+}
+
+.row {
+    display: flex;
+    gap: 10rem;
+}
+
+.row p {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.row img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.left button{
+    width: 20rem;
+    height: 5rem;
+    font-size: 2em;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 25px;
+    font-size: 20em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.left button:hover {
+    background-color: transparent;
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.right a{
+    text-decoration: none;
+    color: var(--color-primary);
+    font-size: 1em;
+}
+.right p{
+    font-size: 22em;
+    font-weight:100;
+    color: var(--color-text-gray);
+}
+
+/* card component */
+.cards-section {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.card{
+    min-width: 30rem;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover{
+    border: 2px solid var(--color-primary);
+}
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    height: 100%;
+}
+.card .card-body  h3{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.card .card-body p{
+    color: var(--color-text-gray);
+    font-size: 1.4rem;
+}
+
+.card img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.card a{
+    text-decoration: none;
+    color: var(--color-text-gray);
+    font-size: 20em;
+    font-weight: 600;
+}
+
+.card a:hover{
+    color: var(--color-primary);
+}
+/* media queries */
+
+@media screen and (max-width: 1024px) {
+    main{
+        flex-direction: column;
+    }
+    .cards-section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .left{
+        width: 80%;
+    }
+    .right{
+        width: 80%;
+    }
+    .card{
+        border: 2px solid var(--color-primary);
+    }
+    .row{
+        gap: 4rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .row{
+        /* flex-direction: column; */
+        gap: 2rem;
+    }
+    .right{
+        display: none;
+    }
+    .left-icon-item{
+        font-size: 20em;
+    }
+}

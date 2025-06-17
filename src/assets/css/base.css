@@ -3,11 +3,11 @@
 :root {
   --color-background: #fafafa;
   --color-text: #2c3e50;
+  --color-text-gray: #777;
   --color-text-light: #ebebeb;
   --color-primary: #42b883;
   --color-secondary: #35495e;
   --color-accent: #41b883;
-
 }
 
 *,
@@ -18,14 +18,23 @@
   font-weight: normal;
   font-size: 62.5%;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
+  max-width: 100%;
   min-height: 100vh;
   color: var(--color-text);
   background: var(--color-background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+#app{
+  min-height: 100vh;
+  max-width: 100vw;
+}
 h1 {
   font-size: 7em;
   line-height: 1.1;
