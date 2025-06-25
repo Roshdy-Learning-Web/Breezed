@@ -1,0 +1,16 @@
+.newsletter{
+    width: 99%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/slide-02.jpg') ;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-text-light);
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+}
